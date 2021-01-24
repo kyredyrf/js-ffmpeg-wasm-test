@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./index.css">
+    <script src="https://cdn.jsdelivr.net/npm/@ffmpeg/ffmpeg@0.9.7/dist/ffmpeg.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <input id="crop-enable" type="checkbox">crop</input><br>
+        <div>
+            <label>w : </label><input id="crop-w" type="text"></input><br>
+            <label>h : </label><input id="crop-h" type="text"></input><br>
+            <label>x : </label><input id="crop-x" type="text"></input><br>
+            <label>y : </label><input id="crop-y" type="text"></input><br>
+        </div>
+    </div>
+    <div>
+        <input id="uploader" type="file"></input>
+    </div>
+    <div>
+        <video id="video" controls muted autoplay></video>
+    </div>
+    <div>
+        <textarea id='log'></textarea>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
